@@ -1,0 +1,105 @@
+.chat {
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9ef121;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.chat-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0.5rem 1rem;
+  height: 70vh;
+  overflow: auto;
+}
+
+.chat-content::-webkit-scrollbar{
+  display: none;
+}
+
+.message {
+  padding: 3px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  padding: 10px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form > textarea {
+  background: #4e4e4e;
+  flex: 0.9;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fcf8f8;
+  resize: none;
+}
+
+.form > textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 3px;
+  color: white;
+}
+
+.valid {
+  background: #61f061;
+}
+
+.invalid {
+  background: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.sender{
+  text-align: end;
+}
+
+.receiver{
+  text-align: start;
+}
